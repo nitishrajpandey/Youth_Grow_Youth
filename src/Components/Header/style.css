@@ -1,0 +1,25 @@
+.animate {
+  animation: increaseHeight 0.4s linear;
+}
+
+@keyframes increaseHeight {
+  from {
+    height: 65px;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+.animate2 {
+  animation: reversed 0.3s linear;
+}
+
+@keyframes reversed {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 65px;
+  }
+}
