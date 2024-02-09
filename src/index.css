@@ -3,3 +3,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Button {
+  padding: 13px 30px;
+  background-color: #0abab5;
+  color: white;
+  font-weight: 600;
+  font-family: Quicksand;
+  font-size: medium;
+  border-radius: 5px;
+}
+.Button:hover:focus {
+  transform: translateY(-2px);
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+.Button2 {
+  padding: 10px 30px;
+  background-color: #0abab5;
+  color: white;
+  font-weight: 600;
+  font-family: Quicksand;
+  font-size: medium;
+  border-radius: 5px;
+}
+.Button2:hover:focus {
+  transform: translateY(-2px);
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  box-shadow: 5px 5px 5px #0abab5;
+}

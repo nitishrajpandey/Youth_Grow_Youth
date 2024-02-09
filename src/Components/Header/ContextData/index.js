@@ -7,23 +7,28 @@ export const NavbarDetails = {
 export const navLink = [
     {
         id: "home",
-        title: "Home"
+        title: "Home",
+        active: ""
     },
     {
         id: "aboutus",
-        title: "About Us"
+        title: "About Us",
+        active: "AboutUs"
     },
     {
         id: "ouradvisors",
-        title: "Our Advisors"
+        title: "Our Advisors",
+        active: "OurAdvisors"
     },
     {
         id: "blog",
-        title: "Blog"
+        title: "Blog",
+        active: "Blog"
     },
     {
         id: "contactus",
-        title: "Contact Us"
+        title: "Contact Us",
+        active: "ContactUs"
     },
 
 ]

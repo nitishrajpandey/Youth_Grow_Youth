@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosClose } from "react-icons/io";
 import Menu from "./Menu";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const dispatch = useDispatch();
@@ -15,11 +16,13 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className=" fixed w-full h-[65px]">
       <nav
-        className={`overflow-hidden w-full ${
-          Togglemenu ? "h-350px  animate" : "h-65px animate2"
-        }  shadow font-Quicksand  p-4 xs:pr-14 xs:pl-3 ss:pl-7 z-0 `}
+        className={`overflow-hidden w-full  absolute  ${
+          Togglemenu
+            ? "h-350px  animate  bg-white "
+            : "h-65px animate2 bg-white "
+        }  shadow font-Quicksand  p-4 xs:pr-14 xs:pl-3 ss:pl-7 `}
       >
         <div className="flex justify-between items-center">
           <div>
@@ -31,7 +34,7 @@ function Navbar() {
             <ul className="flex justify-between gap-5 md:gap-8  font-semibold text-[#8D8BAC]">
               {navLink.map((item) => (
                 <li key={item.id} className="hover:text-[#0ABAB5]">
-                  {item.title}
+                  <NavLink to={item.active}>{item.title}</NavLink>
                 </li>
               ))}
             </ul>

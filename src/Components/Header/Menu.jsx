@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { NavbarDetails, navLink } from "./ContextData";
 
 function Menu() {
@@ -6,12 +7,16 @@ function Menu() {
       <div className="px-5 py-4">
         <ul className=" font-semibold text-[#8D8BAC]">
           {navLink.map((item) => (
-            <li key={item.id} className="mb-2">
-              {item.title}{" "}
+            <li key={item.id} className="mb-2 hover:text-[#0ABAB5]">
+              <NavLink to={item.active}>{item.title}</NavLink>
             </li>
           ))}
-          <button className="block mb-2">{NavbarDetails.btn1}</button>
-          <button className="block">{NavbarDetails.btn2}</button>
+          <button className="block mb-2 hover:text-[#0ABAB5]">
+            {NavbarDetails.btn1}
+          </button>
+          <button className="block hover:text-[#0ABAB5]">
+            {NavbarDetails.btn2}
+          </button>
         </ul>
       </div>
     </div>
