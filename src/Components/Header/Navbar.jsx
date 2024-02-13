@@ -16,12 +16,10 @@ function Navbar() {
   };
 
   return (
-    <div className=" fixed w-full h-[65px]">
+    <div className=" fixed w-full h-[65px] z-50">
       <nav
-        className={`overflow-hidden w-full  absolute  ${
-          Togglemenu
-            ? "h-350px  animate  bg-white "
-            : "h-65px animate2 bg-white "
+        className={`overflow-hidden w-full h-65px  bg-white  absolute  ${
+          Togglemenu && "h-350px  animate  bg-white "
         }  shadow font-Quicksand  p-4 xs:pr-14 xs:pl-3 ss:pl-7 `}
       >
         <div className="flex justify-between items-center">

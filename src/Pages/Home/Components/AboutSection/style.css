@@ -1,0 +1,8 @@
+.effact:hover{
+color: white;
+background-color: #0ABAB5;
+transition-duration: 0.3s;
+transition-timing-function: ease-in-out;
+transform: translateY(-4px);
+box-shadow: 6px 6px 6px  5px #0ABAB5;
+}
