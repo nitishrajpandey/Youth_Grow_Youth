@@ -9,6 +9,8 @@ export default {
       colors: {
         ghostWhite: "#FAFAFF",
         white: "#FFFFFF",
+        Blue: "#292839",
+        deepBlue: "#23222F"
 
       },
       fontFamily: {
