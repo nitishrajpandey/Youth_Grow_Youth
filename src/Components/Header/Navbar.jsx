@@ -38,12 +38,16 @@ function Navbar() {
             </ul>
           </div>
           <div className="hidden sm:flex gap-8 text-[#8D8BAC] font-semibold">
-            <button className="hover:text-[#0ABAB5]">
-              {NavbarDetails.btn1}
-            </button>
-            <button className="hover:text-[#0ABAB5] ">
-              {NavbarDetails.btn2}
-            </button>
+            <NavLink to={"login"}>
+              <button className="hover:text-[#0ABAB5]">
+                {NavbarDetails.btn1}
+              </button>
+            </NavLink>
+            <NavLink to={"register"}>
+              <button className="hover:text-[#0ABAB5] ">
+                {NavbarDetails.btn2}
+              </button>
+            </NavLink>
           </div>
           <div className=" block sm:hidden">
             <button onClick={handelMenuButton}>

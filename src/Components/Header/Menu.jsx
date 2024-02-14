@@ -11,12 +11,16 @@ function Menu() {
               <NavLink to={item.active}>{item.title}</NavLink>
             </li>
           ))}
-          <button className="block mb-2 hover:text-[#0ABAB5]">
-            {NavbarDetails.btn1}
-          </button>
-          <button className="block hover:text-[#0ABAB5]">
-            {NavbarDetails.btn2}
-          </button>
+          <NavLink to={"login"}>
+            <button className="block mb-2 hover:text-[#0ABAB5]">
+              {NavbarDetails.btn1}
+            </button>
+          </NavLink>
+          <NavLink to={"register"}>
+            <button className="block hover:text-[#0ABAB5] ">
+              {NavbarDetails.btn2}
+            </button>
+          </NavLink>
         </ul>
       </div>
     </div>

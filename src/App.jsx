@@ -6,6 +6,8 @@ import About from "./Pages/Aboutus/About";
 import OurAdvisors from "./Pages/OurAdvisors/OurAdvisors";
 import Blog from "./Pages/Blog/Blog";
 import Contact from "./Pages/Contact/Contact";
+import Login from "./Pages/LoginPage/Login";
+import Registration from "./Pages/Registration/Registration";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/ContactUs" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registration />} />
       </Routes>
       <Footer />
     </BrowserRouter>
