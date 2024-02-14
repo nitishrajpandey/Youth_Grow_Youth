@@ -8,7 +8,7 @@ import { footerData } from "./contextData";
 function Footer() {
   return (
     <div className="bg-Blue pt-10 text-[#949493]">
-      <div className="flex flex-col md:flex-row justify-between gap-10 px-4 xs:px-8 ss:px-14 py-20">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-10 px-4 xs:px-8 ss:px-14 py-20">
         <div className="w-full md:w-[30%]">
           <p className="text-[#949493] text-lg mb-10">
             Find like-minded people who have same passion and ambition in life
